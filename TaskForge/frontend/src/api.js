@@ -1,4 +1,4 @@
-const BASE = '/api';
+const BASE = import.meta.env.VITE_API_URL || 'https://taskforge-hk6f.onrender.com/api';
 
 function getToken() {
   return localStorage.getItem('taskforge_token');
